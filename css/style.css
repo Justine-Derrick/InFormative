@@ -7,6 +7,9 @@
 html {
   font-size: 62.5%; }
 
+a:hover {
+  text-decoration: none; }
+
 .nav {
   margin: 0 10rem; }
   .nav-header {
@@ -14,8 +17,8 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0;
-    border-bottom: solid 1px #C1B19A; }
+    padding: 2vw 0;
+    border-bottom: solid 1px lightgray; }
     .nav-header .logo-heading {
       display: flex;
       font-family: "Abril Fatface", cursive; }
@@ -35,14 +38,14 @@ html {
       .nav-header .logo-text h3 {
         padding-left: 1rem;
         font-size: 1.5rem;
-        font-weight: 600; }
+        font-weight: 800; }
       .nav-header .logo-text .line {
         width: 3rem;
         height: .75rem;
         border-bottom: solid 2px #BB0119; }
     .nav-header .search-bar .search {
       height: 3.5rem;
-      width: 20rem;
+      width: 25rem;
       padding: 0.75rem 1.5rem;
       font-family: "Martel Sans", sans-serif;
       font-size: 1.5rem;
@@ -60,9 +63,9 @@ html {
       color: #FAFAEE;
       font-size: 1.2rem; }
   .nav-options {
-    padding: 3rem 10rem;
+    padding: 1.5vw 10rem;
     width: 100%;
-    border-bottom: solid 1px #C1B19A; }
+    border-bottom: solid 1px lightgray; }
     .nav-options ul {
       list-style: none;
       display: flex;
@@ -71,15 +74,106 @@ html {
       margin: 0;
       padding: 0; }
       .nav-options ul .nav-option {
-        padding: 0 2rem;
+        padding: 0 1.5vw;
         font-family: "Martel Sans", sans-serif;
-        font-size: 1.5rem;
+        font-size: .9vw;
+        line-height: .9vw;
         text-transform: uppercase;
-        font-weight: 500;
+        letter-spacing: .1vw;
+        font-weight: 600;
         cursor: pointer; }
       .nav-options ul :hover {
         color: #BB0119; }
       .nav-options ul .current {
         color: #BB0119; }
+
+.top-story {
+  margin: 2vw 10rem;
+  margin-bottom: 0;
+  padding-bottom: 4vw;
+  display: flex;
+  border-bottom: solid 1px lightgray; }
+  .top-story__overlay {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start; }
+  .top-story__vis {
+    width: 60%; }
+  .top-story__heading {
+    position: absolute;
+    z-index: 5500;
+    color: #16100A;
+    height: 55vh; }
+  .top-story__gradient {
+    width: 20%;
+    height: 55vh;
+    background: linear-gradient(to right, #FAFAEE 15%, transparent);
+    position: absolute;
+    z-index: 5000; }
+  .top-story__img-container {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    overflow: hidden; }
+    .top-story__img-container .top-story__img {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      object-position: center; }
+  .top-story__info {
+    width: 40%;
+    padding: 3rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start; }
+    .top-story__info .top-story__article-heading {
+      font-family: "Abril Fatface", cursive;
+      font-size: 3rem;
+      color: #BB0119;
+      padding: 0;
+      margin: 0;
+      line-height: 3rem; }
+    .top-story__info .top-story__article-prev {
+      font-family: "Martel Sans", sans-serif;
+      color: #16100A;
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      padding: 2rem 0;
+      padding-bottom: .5rem; }
+    .top-story__info .top-story__read-more {
+      width: 100%;
+      color: #BB0119;
+      font-family: "Martel Sans", sans-serif;
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: underline;
+      padding: 0;
+      margin: 0;
+      text-align: right; }
+
+.latest-stories {
+  margin: 2vw 10rem;
+  margin-bottom: 0;
+  padding-bottom: 4vw; }
+  .latest-stories__articles {
+    display: flex; }
+    .latest-stories__articles .latest-stories__left {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap; }
+      .latest-stories__articles .latest-stories__left .latest-article {
+        width: 50%;
+        padding: 2rem; }
+        .latest-stories__articles .latest-stories__left .latest-article_img {
+          width: 100%;
+          height: 20rem; }
+    .latest-stories__articles .latest-stories__left {
+      width: 50%;
+      background: blue; }
 
 /*# sourceMappingURL=style.css.map */

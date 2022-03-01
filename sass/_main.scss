@@ -1,0 +1,133 @@
+// --------------------------------------- 
+// featured story
+// ---------------------------------------
+
+.top-story{
+    margin: 2vw 10rem;
+    margin-bottom: 0;
+    padding-bottom: 4vw;
+    display: flex;
+    border-bottom: solid 1px lightgray;
+
+    &__overlay{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    &__vis{
+        width: 60%;
+    }
+    
+
+    &__heading{
+        position: absolute;
+        z-index: 5500;
+        color: $black-ish;
+        height: 55vh;
+    }
+
+    &__gradient{
+        width: 20%;
+        height: 55vh;
+        background: linear-gradient(to right, $white 15%, transparent);
+        position: absolute;
+        z-index: 5000;
+    }
+
+    &__img-container{
+        width: 100%;
+        height: 55vh;
+        position: relative;
+        overflow: hidden;
+
+        .top-story__img{
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__info{
+        width: 40%;
+        padding: 3rem;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        .top-story__article-heading{
+            font-family: $heading-font;
+            font-size: 3rem;
+            color: $bright-red;
+            padding: 0;
+            margin: 0;
+            line-height: 3rem;
+        }
+
+        .top-story__article-prev{
+            font-family: $body-font;
+            color: $black-ish;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            padding: 2rem 0;
+            padding-bottom: .5rem;
+        }
+
+        .top-story__read-more{
+            width: 100%;
+            color: $bright-red;
+            font-family: $body-font;
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: underline;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+        }
+    }
+}
+
+// -----------------------------------
+// latest stories
+// -----------------------------------
+
+.latest-stories{
+
+    margin: 2vw 10rem;
+    margin-bottom: 0;
+    padding-bottom: 4vw;
+
+    &__articles{
+        display: flex;
+
+        .latest-stories__left{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .latest-article{
+                width: 50%;
+                padding: 2rem;
+
+                &_img{
+                    width: 100%;
+                    height: 20rem;
+                }
+            }
+        }
+
+        .latest-stories__left{
+            width: 50%;
+            background: blue;
+        }
+
+    }
+
+  
+}

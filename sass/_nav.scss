@@ -1,16 +1,21 @@
+a:hover{
+    text-decoration: none;
+}
+
+
 .nav{
     // width: 100%;
     // height: 20vh;
     // background: $bright-red;
     margin: 0 10rem;
-   
+
     &-header{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 3rem 0;
-        border-bottom: solid 1px $cool-neutral;
+        padding: 2vw 0;
+        border-bottom: solid 1px lightgray;
 
         .logo{
 
@@ -42,7 +47,7 @@
                 h3{
                     padding-left: 1rem;
                     font-size: 1.5rem;
-                    font-weight: 600;
+                    font-weight: 800;
                 }
 
                 .line{
@@ -56,7 +61,7 @@
         .search-bar{
             .search{
                 height: 3.5rem;
-                width: 20rem;
+                width: 25rem;
                 padding: 0.75rem 1.5rem;
                 font-family: $body-font;
                 font-size: 1.5rem;
@@ -81,9 +86,9 @@
 
 
     &-options{
-        padding: 3rem 10rem;
+        padding: 1.5vw 10rem;
         width: 100%;
-        border-bottom: solid 1px $cool-neutral;
+        border-bottom: solid 1px lightgray;
 
         ul{           
             list-style: none;
@@ -94,11 +99,13 @@
             padding: 0;
 
             .nav-option{
-                padding: 0 2rem;
+                padding: 0 1.5vw;
                 font-family: $body-font;
-                font-size: 1.5rem;
+                font-size: .9vw;
+                line-height: .9vw;
                 text-transform: uppercase;    
-                font-weight: 500;   
+                letter-spacing: .1vw;
+                font-weight: 600;   
                 cursor: pointer;
             }
 
