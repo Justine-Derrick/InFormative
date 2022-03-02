@@ -2,6 +2,48 @@ a:hover{
     text-decoration: none;
 }
 
+.todays-info{
+    width: 100%;
+    padding: 3rem 10rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__local{
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        .location{
+            padding-right: 1.5rem;
+            color: $black-ish;
+        }
+    }
+
+    h6{
+        font-family: $body-font;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $bright-red;
+        padding-left: .5rem;
+        // vertical-align: middle;
+        // top: 50%;
+        // -ms-transform: translateY(-50%);
+        transform: translate(0, 25%);
+    }
+
+    .weather-icon{
+        height: 2rem;
+        // margin-right: 1rem;
+        transform: translate(0, 50%);
+    }
+
+    .todays-date{
+        color: $black-ish;
+    }
+
+}
 
 .nav{
     // width: 100%;
@@ -15,6 +57,7 @@ a:hover{
         justify-content: space-between;
         align-items: center;
         padding: 2vw 0;
+        padding-top: 1vw;
         border-bottom: solid 1px lightgray;
 
         .logo{

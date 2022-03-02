@@ -10,6 +10,33 @@ html {
 a:hover {
   text-decoration: none; }
 
+.todays-info {
+  width: 100%;
+  padding: 3rem 10rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .todays-info__local {
+    width: 50%;
+    display: flex;
+    align-items: center; }
+    .todays-info__local .location {
+      padding-right: 1.5rem;
+      color: #16100A; }
+  .todays-info h6 {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #BB0119;
+    padding-left: .5rem;
+    transform: translate(0, 25%); }
+  .todays-info .weather-icon {
+    height: 2rem;
+    transform: translate(0, 50%); }
+  .todays-info .todays-date {
+    color: #16100A; }
+
 .nav {
   margin: 0 10rem; }
   .nav-header {
@@ -18,6 +45,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 2vw 0;
+    padding-top: 1vw;
     border-bottom: solid 1px lightgray; }
     .nav-header .logo-heading {
       display: flex;
@@ -60,7 +88,7 @@ a:hover {
       border-radius: 3.5rem;
       background: #BB0119;
       border: none;
-      color: #FAFAEE;
+      color: #fffffd;
       font-size: 1.2rem; }
   .nav-options {
     padding: 1.5vw 10rem;
@@ -87,6 +115,9 @@ a:hover {
       .nav-options ul .current {
         color: #BB0119; }
 
+body {
+  background: #fffffd; }
+
 .top-story {
   margin: 2vw 10rem;
   margin-bottom: 0;
@@ -108,7 +139,7 @@ a:hover {
   .top-story__gradient {
     width: 20%;
     height: 55vh;
-    background: linear-gradient(to right, #FAFAEE 15%, transparent);
+    background: linear-gradient(to right, #fffffd 15%, transparent);
     position: absolute;
     z-index: 5000; }
   .top-story__img-container {
@@ -147,10 +178,9 @@ a:hover {
       width: 100%;
       color: #BB0119;
       font-family: "Martel Sans", sans-serif;
-      font-size: 1.8rem;
-      line-height: 1.8rem;
+      font-size: 1.4rem;
+      line-height: 1.4rem;
       font-weight: 600;
-      text-transform: uppercase;
       text-decoration: underline;
       padding: 0;
       margin: 0;
@@ -160,20 +190,145 @@ a:hover {
   margin: 2vw 10rem;
   margin-bottom: 0;
   padding-bottom: 4vw; }
+  .latest-stories__heading {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    margin: 0;
+    padding: 0; }
   .latest-stories__articles {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
     .latest-stories__articles .latest-stories__left {
+      width: 50%; }
+      .latest-stories__articles .latest-stories__left .card-container {
+        width: 100%;
+        margin-top: 2vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .latest-stories__articles .latest-stories__left .card-container .card {
+          width: 50%;
+          padding-right: 2vw;
+          margin-bottom: 2vw;
+          border: none;
+          border-radius: 0%;
+          background: none; }
+          .latest-stories__articles .latest-stories__left .card-container .card-body {
+            padding: 0;
+            padding-top: 1rem; }
+          .latest-stories__articles .latest-stories__left .card-container .card-title {
+            font-family: "Abril Fatface", cursive;
+            text-transform: lowercase;
+            color: #BB0119;
+            font-size: 2rem;
+            line-height: 2.8rem; }
+          .latest-stories__articles .latest-stories__left .card-container .card-text {
+            font-family: "Martel Sans", sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.8rem; }
+          .latest-stories__articles .latest-stories__left .card-container .card .btn {
+            background: none;
+            color: #BB0119;
+            border: none;
+            padding: 0;
+            border-radius: 0;
+            width: 100%;
+            text-align: right;
+            font-family: "Martel Sans", sans-serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: underline; }
+    .latest-stories__articles .latest-stories__right {
       width: 50%;
-      display: flex;
-      flex-wrap: wrap; }
-      .latest-stories__articles .latest-stories__left .latest-article {
-        width: 50%;
-        padding: 2rem; }
-        .latest-stories__articles .latest-stories__left .latest-article_img {
+      margin-left: 2vw; }
+      .latest-stories__articles .latest-stories__right .card-large {
+        width: 100%;
+        max-height: 100%;
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; }
+        .latest-stories__articles .latest-stories__right .card-large .card-body {
+          padding: 0;
+          padding-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end; }
+        .latest-stories__articles .latest-stories__right .card-large .card-title {
+          font-family: "Abril Fatface", cursive;
+          text-transform: lowercase;
+          color: #BB0119;
+          font-size: 2rem;
+          line-height: 2.8rem; }
+        .latest-stories__articles .latest-stories__right .card-large .card-text {
+          font-family: "Martel Sans", sans-serif;
+          font-size: 1.2rem;
+          line-height: 1.8rem; }
+        .latest-stories__articles .latest-stories__right .card-large .btn {
+          background: none;
+          color: #BB0119;
+          border: none;
+          padding: 0;
+          border-radius: 0;
           width: 100%;
-          height: 20rem; }
-    .latest-stories__articles .latest-stories__left {
-      width: 50%;
-      background: blue; }
+          text-align: right;
+          font-family: "Martel Sans", sans-serif;
+          font-size: 1.2rem;
+          font-weight: 600;
+          text-decoration: underline; }
+
+.footer {
+  background: #86000B;
+  width: 100%;
+  padding: 2rem 10rem; }
+  .footer-top {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #fffffd 1px; }
+    .footer-top .footer-logo {
+      width: 20rem; }
+    .footer-top__right {
+      display: flex;
+      justify-content: space-between;
+      color: #fffffd;
+      font-family: "Martel Sans", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 300; }
+      .footer-top__right--news {
+        padding-right: 8rem; }
+        .footer-top__right--news h3 {
+          padding-bottom: 1rem;
+          font-size: 1.6rem;
+          letter-spacing: .1rem; }
+        .footer-top__right--news ul {
+          list-style: none;
+          line-height: 2.2rem;
+          letter-spacing: 0.05rem; }
+      .footer-top__right--info h3 {
+        padding-bottom: 1rem;
+        font-size: 1.6rem;
+        letter-spacing: .1rem; }
+      .footer-top__right--info ul {
+        list-style: none;
+        line-height: 2.2rem;
+        letter-spacing: 0.05rem; }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fffffd;
+    padding-top: 2rem; }
+    .footer-bottom .footer-text {
+      font-family: "Martel Sans", sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      margin: 0;
+      font-weight: 500; }
+    .footer-bottom .icon {
+      height: 2.5rem;
+      padding-left: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
